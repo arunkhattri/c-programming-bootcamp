@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-  int a = 10;
-  int b = 15;
+  int a = 15;
+  int b = 10;
   int temp;
 
   printf("a = %d\nb = %d\n", a, b);
@@ -13,4 +13,11 @@ int main() {
   b = temp;
 
   printf("[-] After swap:\na = %d\nb = %d\n", a, b);
+
+  // another way
+  a = a - b;
+  b = b + a;
+  a = b - a;
+
+  printf("[-] After another swap:\na = %d\nb = %d\n", a, b);
 }
